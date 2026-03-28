@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* TerraCheck Palette - Westworld/Bloomberg Aesthetic */
+  --background: #000000;
+  /* Deep black/gray */
+  --foreground: #FAFAFA;
+  /* Off-white */
+
+  --card: #0A0A0A;
+  --card-foreground: #FAFAFA;
+
+  --popover: #0A0A0A;
+  --popover-foreground: #FAFAFA;
+
+  --primary: #00F0FF;
+  /* Neon Cyan */
+  --primary-foreground: #000000;
+
+  --secondary: #FFB800;
+  /* Neon Amber */
+  --secondary-foreground: #000000;
+
+  --muted: #1F1F1F;
+  --muted-foreground: #A1A1AA;
+
+  --accent: #1F1F1F;
+  --accent-foreground: #FAFAFA;
+
+  --destructive: #FF3333;
+  /* Signal Red */
+  --destructive-foreground: #FAFAFA;
+
+  --border: #27272A;
+  --input: #27272A;
+  --ring: #00F0FF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
