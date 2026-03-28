@@ -135,6 +135,7 @@ export function TerrainChunk({ position }: TerrainChunkProps) {
             {/* The Terrain Map */}
             <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]}>
                 <planeGeometry args={[30, 30, 60, 60]} />
+                {/* @ts-expect-error - Custom R3F shader material not yet typed */}
                 <deformationGridMaterial ref={meshRef} transparentSide={THREE.DoubleSide} />
             </mesh>
 
