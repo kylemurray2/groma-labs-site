@@ -44,11 +44,11 @@ export function ContactSection() {
         <SectionReveal delay={0.2}>
           <div className="space-y-3">
             <a
-              href="mailto:kyle@gromalabs.com"
+              href="mailto:murray@gromalabs.com"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 hover:border-white/25 transition-all backdrop-blur-sm"
             >
               <Mail className="w-4 h-4" />
-              kyle@gromalabs.com
+              murray@gromalabs.com
             </a>
             <p className="text-xs text-gray-600 pt-2">
               Golden, Colorado

@@ -99,37 +99,6 @@ export function ResearchSection() {
             />
           </SectionReveal>
         </div>
-
-        {/* Data sources bar */}
-        <SectionReveal delay={0.4}>
-          <div className="mt-16 pt-8 border-t border-white/5">
-            <p className="text-[10px] font-medium tracking-[0.3em] text-gray-600 uppercase mb-5">
-              Built With
-            </p>
-            <div className="flex flex-wrap gap-x-8 gap-y-3 text-xs text-gray-500">
-              <span className="flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-primary/40" />
-                ESA Sentinel-1
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-primary/40" />
-                NASA ASF HyP3
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-primary/40" />
-                MintPy
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-primary/40" />
-                ISCE2/3
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="w-1 h-1 rounded-full bg-primary/40" />
-                CUDA / Python
-              </span>
-            </div>
-          </div>
-        </SectionReveal>
       </div>
     </section>
   );

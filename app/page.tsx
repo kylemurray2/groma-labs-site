@@ -33,7 +33,7 @@ export default function Home() {
               <Link href="/#research" className="hover:text-white transition-colors">Research</Link>
               <Link href="/#consulting" className="hover:text-white transition-colors">Consulting</Link>
               <Link href="/terracheck" className="hover:text-white transition-colors">TerraCheck</Link>
-              <Link href="mailto:kyle@gromalabs.com" className="hover:text-white transition-colors">Contact</Link>
+              <Link href="mailto:murray@gromalabs.com" className="hover:text-white transition-colors">Contact</Link>
             </nav>
             <p className="text-xs text-gray-600">
               &copy; {new Date().getFullYear()} Groma Labs LLC. Golden, CO.

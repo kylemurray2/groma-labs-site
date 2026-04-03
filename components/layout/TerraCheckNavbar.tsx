@@ -34,7 +34,7 @@ export function TerraCheckNavbar() {
 
                 <div className="flex items-center gap-4">
                     <Link
-                        href="mailto:kyle@gromalabs.com"
+                        href="mailto:murray@gromalabs.com"
                         className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:border-white/25 transition-colors"
                     >
                         Contact

@@ -13,7 +13,7 @@ export function GromaHero() {
           src="/groma_hero.png"
           alt="Radar interferometry visualization"
           fill
-          className="object-cover object-center opacity-[0.78]"
+          className="object-cover object-center opacity-[0.5]"
           priority
         />
         {/* Vignette-style overlays — lighter in the center so the artwork reads */}
@@ -43,17 +43,35 @@ export function GromaHero() {
             Earth Observation Research &amp; Applied Science
           </div>
 
-          {/* Main title */}
-          <h1 className="mb-6 drop-shadow-[0_4px_32px_rgba(0,0,0,0.85)]">
-            <span className="block text-7xl md:text-9xl font-extrabold tracking-tighter text-white">
+          {/* Main title — text-shadow (not filter drop-shadow): black shadow on dark bg was invisible */}
+          <h1 className="mb-6">
+            <span
+              className="block text-7xl md:text-9xl font-extrabold tracking-tighter text-white"
+              style={{
+                textShadow:
+                  "0 0 2px rgba(255,255,255,0.2), 0 2px 6px rgba(0,0,0,0.95), 0 6px 28px rgba(0,0,0,0.75)",
+              }}
+            >
               Groma
             </span>
-            <span className="block text-2xl md:text-3xl font-light tracking-[0.3em] text-primary/70 uppercase mt-2">
+            <span
+              className="block text-2xl md:text-3xl font-light tracking-[0.3em] text-primary/80 uppercase mt-2"
+              style={{
+                textShadow:
+                  "0 0 12px rgba(34,211,238,0.35), 0 2px 8px rgba(0,0,0,0.9)",
+              }}
+            >
               Labs
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300/95 font-light max-w-2xl mx-auto leading-relaxed mb-12 drop-shadow-[0_2px_16px_rgba(0,0,0,0.75)]">
+          <p
+            className="text-lg md:text-xl text-gray-300/95 font-light max-w-2xl mx-auto leading-relaxed mb-12"
+            style={{
+              textShadow:
+                "0 1px 2px rgba(0,0,0,0.95), 0 0 20px rgba(0,0,0,0.65)",
+            }}
+          >
             We develop novel remote sensing algorithms and translate satellite data
             into actionable intelligence. From fundamental research to commercial
             products — bridging the gap between scientific discovery and real-world impact.

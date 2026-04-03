@@ -40,7 +40,7 @@ export function Navbar() {
                 {/* Actions */}
                 <div className="flex items-center gap-4">
                     <Link
-                        href="mailto:kyle@gromalabs.com"
+                        href="mailto:murray@gromalabs.com"
                         className="rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm font-medium text-white hover:bg-white/10 hover:border-white/25 transition-all backdrop-blur-sm"
                     >
                         Contact
