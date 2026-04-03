@@ -2,7 +2,7 @@
 
 import { SectionReveal } from "@/components/ui/SectionReveal";
 import { motion } from "framer-motion";
-import { Cpu, Activity, Satellite } from "lucide-react";
+import { Cpu, Activity, Globe2 } from "lucide-react";
 
 interface ResearchCardProps {
   icon: React.ReactNode;
@@ -64,9 +64,9 @@ export function ResearchSection() {
               Current Focus Areas
             </h2>
             <p className="text-gray-500 max-w-xl">
-              Our work spans algorithm development, high-performance computing, and
-              applied remote sensing — with a focus on making satellite-derived measurements
-              faster, more accurate, and more accessible.
+              Algorithm and software development, operational monitoring, and earth science—
+              from robust InSAR stacks to hazard-relevant deformation signals and process-oriented
+              interpretation.
             </p>
           </div>
         </SectionReveal>
@@ -75,29 +75,27 @@ export function ResearchSection() {
           <SectionReveal delay={0.1}>
             <ResearchCard
               icon={<Cpu className="w-5 h-5 text-primary/70" />}
-              title="GPU-Native Phase Unwrapping"
-              description="A massively parallel PD-CNF solver that replaces SNAPHU for large-scale InSAR processing. Production-ready, topologically consistent, and dramatically faster."
-              tags={["CUDA", "Phase Unwrapping", "HPC"]}
-              metric={{ value: "13×", label: "faster" }}
+              title="InSAR Methods Development"
+              description="Parallel and GPU-accelerated processing, atmospheric noise mitigation, and phase unwrapping—building InSAR stacks that scale and stay usable in noisy conditions."
+              tags={["GPU / parallel", "Atmospheric noise", "Unwrapping"]}
             />
           </SectionReveal>
 
           <SectionReveal delay={0.2}>
             <ResearchCard
               icon={<Activity className="w-5 h-5 text-primary/70" />}
-              title="Deformation Time-Series Analysis"
-              description="Novel harmonic decomposition methods that separate seasonal soil signals from long-term tectonic or anthropogenic trends with sub-centimeter accuracy."
-              tags={["MintPy", "Time Series", "InSAR"]}
-              metric={{ value: "<5mm", label: "precision" }}
+              title="Monitoring"
+              description="Infrastructure deformation and stability, coastal flooding hazards, and broader geophysical hazards—turning repeat-pass radar into operational situational awareness."
+              tags={["Infrastructure", "Coastal flooding", "Geophysical hazards"]}
             />
           </SectionReveal>
 
           <SectionReveal delay={0.3}>
             <ResearchCard
-              icon={<Satellite className="w-5 h-5 text-primary/70" />}
-              title="Infrastructure Monitoring"
-              description="Applying persistent scatterer and distributed scatterer techniques to monitor bridges, dams, and building stability from space using Sentinel-1 radar data."
-              tags={["Sentinel-1", "PS-InSAR", "Monitoring"]}
+              icon={<Globe2 className="w-5 h-5 text-primary/70" />}
+              title="Earth Science Applications"
+              description="Groundwater, climate variability, coastal processes, and tectonics and volcanology—linking InSAR velocities to hydrologic, cryospheric, and solid-earth processes."
+              tags={["Groundwater", "Climate variability", "Coastal processes", "Tectonics & volcanology"]}
             />
           </SectionReveal>
         </div>

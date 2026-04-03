@@ -59,7 +59,7 @@ export function GromaHero() {
             products — bridging the gap between scientific discovery and real-world impact.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <Link
               href="/#research"
               className="h-12 px-7 rounded-full border border-white/15 bg-white/5 text-white font-medium text-sm hover:bg-white/10 hover:border-white/25 transition-all backdrop-blur-sm inline-flex items-center justify-center gap-2"
@@ -71,12 +71,10 @@ export function GromaHero() {
             </Link>
             <Link
               href="/terracheck"
-              className="h-12 px-7 rounded-full bg-primary/10 text-primary font-medium text-sm hover:bg-primary/20 transition-all inline-flex items-center justify-center gap-2"
+              className="h-11 px-5 rounded-full border border-transparent text-white/45 text-sm font-medium hover:text-white/65 hover:border-white/10 transition-all inline-flex items-center justify-center gap-1.5"
             >
-              View TerraCheck
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              TerraCheck
+              <span className="text-[11px] font-normal text-white/30 tracking-wide">coming soon</span>
             </Link>
           </div>
         </motion.div>

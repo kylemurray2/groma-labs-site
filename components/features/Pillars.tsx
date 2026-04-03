@@ -46,7 +46,7 @@ export function Pillars() {
             <PillarCard
               icon={<Radar className="w-7 h-7 text-white/60" />}
               title="Products"
-              description="We translate research into tools that democratize access to geophysical data. Our flagship product, TerraCheck, delivers satellite-derived ground health reports for real estate."
+              description="We translate research into tools that democratize access to geophysical data—including TerraCheck, a satellite-derived ground health offering for real estate, currently in development."
               accentColor="white"
             />
           </SectionReveal>

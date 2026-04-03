@@ -40,38 +40,17 @@ export function FounderSection() {
                 a homebuyer understand their land, or enabling an engineer to monitor a bridge from space.&rdquo;
               </blockquote>
 
-              <div className="grid sm:grid-cols-2 gap-4 pt-2">
-                <div className="bg-white/[0.02] rounded-xl border border-white/[0.06] p-4">
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Education</p>
-                  <p className="text-sm text-white font-medium">PhD, Geophysics</p>
-                  <p className="text-xs text-gray-400">Cornell University</p>
-                </div>
-                <div className="bg-white/[0.02] rounded-xl border border-white/[0.06] p-4">
-                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Specialization</p>
-                  <p className="text-sm text-white font-medium">InSAR &amp; Remote Sensing</p>
-                  <p className="text-xs text-gray-400">Algorithm development since 2015</p>
-                </div>
-              </div>
-
-              <div className="pt-2">
-                <p className="text-xs text-gray-500 uppercase tracking-wider mb-3">Core Expertise</p>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Synthetic Aperture Radar (SAR)",
-                    "InSAR Time-Series",
-                    "Phase Unwrapping",
-                    "GPU Computing",
-                    "Geophysical Modeling",
-                    "Remote Sensing",
-                  ].map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 text-xs rounded-full bg-white/[0.04] text-gray-400 border border-white/[0.06]"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
+              <div className="space-y-4 pt-1 text-sm text-gray-400 leading-relaxed">
+                <p>
+                  <span className="text-white/90">Groma Labs</span> is an earth observation research and applied
+                  science practice. We develop InSAR methods and software, take on monitoring and consulting
+                  work where deformation matters, and build products that put satellite-derived ground
+                  intelligence in reach of partners who need it—research, industry, and the public sector.
+                </p>
+                <p>
+                  The lab is small by design: rigorous methods, clear communication, and work that holds up
+                  when the question is safety, liability, or long-term infrastructure performance.
+                </p>
               </div>
             </div>
           </SectionReveal>

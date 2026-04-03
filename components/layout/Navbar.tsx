@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 const Navigation = [
     { name: "Research", href: "/#research" },
@@ -32,12 +31,9 @@ export function Navbar() {
                     ))}
                     <Link
                         href="/terracheck"
-                        className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+                        className="text-sm font-medium text-muted-foreground hover:text-white transition-colors"
                     >
                         TerraCheck
-                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
                     </Link>
                 </div>
 
