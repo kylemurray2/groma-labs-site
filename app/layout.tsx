@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TerraCheck | The MRI for Real Estate",
-  description: "Advanced satellite interferometry structural health reports for real estate.",
+  title: "Groma Labs | Earth Observation Science",
+  description: "Groma Labs develops novel remote sensing algorithms and translates satellite data into actionable intelligence. Research, consulting, and products for earth observation.",
 };
 
 export default function RootLayout({

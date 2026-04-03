@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  /* TerraCheck Palette - Westworld/Bloomberg Aesthetic */
+  /* Groma Labs Palette - Westworld/Bloomberg Aesthetic */
   --background: #000000;
-  /* Deep black/gray */
   --foreground: #FAFAFA;
-  /* Off-white */
 
   --card: #0A0A0A;
   --card-foreground: #FAFAFA;
@@ -28,7 +26,6 @@
   --accent-foreground: #FAFAFA;
 
   --destructive: #FF3333;
-  /* Signal Red */
   --destructive-foreground: #FAFAFA;
 
   --border: #27272A;
@@ -64,4 +61,27 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }

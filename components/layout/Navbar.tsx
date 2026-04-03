@@ -2,10 +2,9 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const Navigation = [
-    { name: "Learn", href: "/learn" },
-    { name: "Product", href: "/#product" },
-    { name: "Pricing", href: "/#pricing" },
-    { name: "Company", href: "/company" },
+    { name: "Research", href: "/#research" },
+    { name: "Consulting", href: "/#consulting" },
+    { name: "About", href: "/#about" },
 ];
 
 export function Navbar() {
@@ -13,13 +12,11 @@ export function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-background/60 backdrop-blur-xl">
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
-                    <Link href="/" className="font-bold text-lg text-foreground hover:text-white transition-colors">
-                        TerraCheck
+                <div className="flex items-center gap-1.5">
+                    <Link href="/" className="flex items-baseline gap-1 hover:opacity-80 transition-opacity">
+                        <span className="font-extrabold text-lg tracking-tight text-white">GROMA</span>
+                        <span className="text-xs font-medium tracking-[0.2em] text-primary/80 uppercase">Labs</span>
                     </Link>
-                    <div className="hidden sm:block">
-                        <span className="rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-medium text-primary tracking-wide">BETA</span>
-                    </div>
                 </div>
 
                 {/* Desktop Nav */}
@@ -28,26 +25,29 @@ export function Navbar() {
                         <Link
                             key={item.name}
                             href={item.href}
-                            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                            className="text-sm font-medium text-muted-foreground hover:text-white transition-colors"
                         >
                             {item.name}
                         </Link>
                     ))}
+                    <Link
+                        href="/terracheck"
+                        className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+                    >
+                        TerraCheck
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </Link>
                 </div>
 
                 {/* Actions */}
                 <div className="flex items-center gap-4">
                     <Link
-                        href="/login"
-                        className="hidden text-sm font-medium text-muted-foreground hover:text-white sm:block transition-colors"
+                        href="mailto:kyle@gromalabs.com"
+                        className="rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm font-medium text-white hover:bg-white/10 hover:border-white/25 transition-all backdrop-blur-sm"
                     >
-                        Log in
-                    </Link>
-                    <Link
-                        href="/search"
-                        className="rounded-full bg-white px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 transition-colors"
-                    >
-                        Get Report
+                        Contact
                     </Link>
                 </div>
             </div>
