@@ -13,12 +13,12 @@ export function GromaHero() {
           src="/groma_hero.png"
           alt="Radar interferometry visualization"
           fill
-          className="object-cover object-center opacity-40"
+          className="object-cover object-center opacity-[0.78]"
           priority
         />
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black z-10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 z-10" />
+        {/* Vignette-style overlays — lighter in the center so the artwork reads */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/25 to-black/88 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-transparent to-black/45 z-10" />
       </div>
 
       {/* Subtle grid pattern */}
@@ -44,7 +44,7 @@ export function GromaHero() {
           </div>
 
           {/* Main title */}
-          <h1 className="mb-6">
+          <h1 className="mb-6 drop-shadow-[0_4px_32px_rgba(0,0,0,0.85)]">
             <span className="block text-7xl md:text-9xl font-extrabold tracking-tighter text-white">
               Groma
             </span>
@@ -53,7 +53,7 @@ export function GromaHero() {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto leading-relaxed mb-12">
+          <p className="text-lg md:text-xl text-gray-300/95 font-light max-w-2xl mx-auto leading-relaxed mb-12 drop-shadow-[0_2px_16px_rgba(0,0,0,0.75)]">
             We develop novel remote sensing algorithms and translate satellite data
             into actionable intelligence. From fundamental research to commercial
             products — bridging the gap between scientific discovery and real-world impact.
