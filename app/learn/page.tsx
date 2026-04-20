@@ -1,5 +1,12 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: "/learn",
+    },
+};
 
 export default function LearnPage() {
     return (

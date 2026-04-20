@@ -1,10 +1,14 @@
 import { TerraCheckNavbar } from "@/components/layout/TerraCheckNavbar";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "TerraCheck | Coming Soon | Groma Labs",
     description:
         "TerraCheck will offer satellite-derived ground health insights for real estate. Not in production yet — from Groma Labs.",
+    alternates: {
+        canonical: "/terracheck",
+    },
 };
 
 export default function TerraCheckComingSoonPage() {

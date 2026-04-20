@@ -1,5 +1,12 @@
 import { Navbar } from "@/components/layout/Navbar";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: "/company",
+    },
+};
 
 export default function CompanyPage() {
     return (

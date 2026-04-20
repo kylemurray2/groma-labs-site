@@ -6,6 +6,13 @@ import { FounderSection } from "@/components/features/FounderSection";
 import { TerraCheckCallout } from "@/components/features/TerraCheckCallout";
 import { ContactSection } from "@/components/features/ContactSection";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
